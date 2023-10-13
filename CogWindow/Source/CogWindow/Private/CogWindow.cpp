@@ -82,20 +82,20 @@ void UCogWindow::Render(float DeltaTime)
             }
         }
 
-        if (bHasMenu)
+        if (ImGui::BeginPopupContextWindow())
         {
-            if (ImGui::BeginPopupContextWindow())
+            if (bHasMenu)
             {
                 ImGui::Checkbox("Hide Menu", &bHideMenu);
-
-                if (ImGui::Button("Reset"))
-                {
-                    ResetConfig();
-                }
-                ImGui::EndPopup();
             }
-        }
 
+            if (ImGui::Button("Reset"))
+            {
+                ResetConfig();
+            }
+
+            ImGui::EndPopup();
+        }
 
         RenderContent();
         ImGui::End();
