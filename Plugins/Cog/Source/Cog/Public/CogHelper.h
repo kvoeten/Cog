@@ -2,6 +2,7 @@
 
 #include "AssetRegistry/AssetData.h"
 #include "CoreMinimal.h"
+#include "Engine/EngineTypes.h"
 #include "Templates/SubclassOf.h"
 
 class UCollisionProfile;

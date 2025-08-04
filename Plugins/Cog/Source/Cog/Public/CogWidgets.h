@@ -16,6 +16,7 @@ class UEnum;
 class UObject;
 enum class ECheckBoxState : uint8;
 enum ECollisionChannel : int;
+struct FKey;
 struct FKeyBind;
 
 using FCogWindowActorContextMenuFunction = TFunction<void(AActor& Actor)>;

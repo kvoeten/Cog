@@ -14,6 +14,7 @@
 #include "InputCoreTypes.h"
 
 #if WITH_EDITOR
+#include "Editor.h"
 #include "IAssetTools.h"
 #include "Subsystems/AssetEditorSubsystem.h"
 #endif

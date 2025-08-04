@@ -4,6 +4,7 @@
 #include "CogCommonConfig.h"
 #include "CogEngineDataAsset.h"
 #include "GameFramework/Actor.h"
+#include "Framework/Commands/InputChord.h"
 #include "CogWindow.h"
 #include "CogEngineWindow_Selection.generated.h"
 

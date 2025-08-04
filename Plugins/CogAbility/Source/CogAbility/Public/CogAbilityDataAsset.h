@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
@@ -14,10 +14,10 @@ struct COGABILITY_API FCogAbilityCheat
 {
     GENERATED_BODY()
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FString Name;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     TSubclassOf<UGameplayEffect> Effect;
 };
 
@@ -27,25 +27,25 @@ struct COGABILITY_API FCogAbilityPool
 {
     GENERATED_BODY()
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FString Name;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FGameplayAttribute Value;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FGameplayAttribute Min;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FGameplayAttribute Max;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FGameplayAttribute Regen;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FLinearColor Color = FLinearColor(0.5f, 0.5f, 0.5f, 1.0f);
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FLinearColor BackColor = FLinearColor(0.15, 0.15, 0.15, 1.0f);
 };
 
@@ -56,16 +56,16 @@ struct FCogAbilityTweak
 {
     GENERATED_BODY()
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FName Name;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     TSubclassOf<UGameplayEffect> Effect;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     float Multiplier = 0.01f;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     float AddPostMultiplier = 1.0f;
 };
 
@@ -75,22 +75,22 @@ struct FCogAbilityTweakCategory
 {
     GENERATED_BODY()
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FString Name;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FGameplayTag Id;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     TSubclassOf<AActor> ActorClass;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FGameplayTagContainer RequiredTags;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FGameplayTagContainer IgnoredTags;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FLinearColor Color = FLinearColor::White;
 };
 
@@ -100,13 +100,13 @@ struct FCogAbilityTweakProfileValue
 {
     GENERATED_BODY()
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     TSubclassOf<UGameplayEffect> Effect;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FGameplayTag CategoryId;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     float Value = 0.0f;
 };
 
@@ -116,10 +116,10 @@ struct FCogAbilityTweakProfile
 {
     GENERATED_BODY()
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     FName Name;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     TArray<FCogAbilityTweakProfileValue> Tweaks;
 };
 

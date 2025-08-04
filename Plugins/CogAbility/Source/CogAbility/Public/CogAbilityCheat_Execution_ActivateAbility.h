@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "CoreMinimal.h"
 #include "CogEngineDataAsset.h"
@@ -19,9 +19,9 @@ public:
 
     virtual bool GetColor(const FCogWindow& InCallingWindow, FLinearColor& OutColor) const override;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(Category = "CogAbility", EditAnywhere)
     TSubclassOf<UGameplayAbility> Ability;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogAbility", EditAnywhere)
     bool RemoveAbilityOnEnd = true;
 };

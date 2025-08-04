@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
@@ -42,13 +42,13 @@ struct COGENGINE_API FCogEngineCheat
 {
     GENERATED_BODY()
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     FString Name;
 
-    UPROPERTY(EditAnywhere, Instanced)
+    UPROPERTY(Category = "CogEngine", EditAnywhere, Instanced)
     TObjectPtr<UCogEngineCheat_Execution> Execution;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     FLinearColor Color = FLinearColor::White;
 
     mutable FLinearColor CustomColor = FLinearColor::White;
@@ -76,10 +76,10 @@ struct COGENGINE_API FCogEngineSpawnEntry
 {
     GENERATED_BODY()
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     TSubclassOf<AActor> Class;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     TObjectPtr<const UObject> Asset = nullptr;
 };
 
@@ -89,13 +89,13 @@ struct COGENGINE_API FCogEngineSpawnGroup
 {
     GENERATED_BODY()
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     FString Name;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     FLinearColor Color = FLinearColor(0.5f, 0.5f, 0.5f, 1.0f);
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     TArray<FCogEngineSpawnEntry> Spawns;
 };
 

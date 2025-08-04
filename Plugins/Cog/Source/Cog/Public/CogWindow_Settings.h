@@ -1,6 +1,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Framework/Commands/InputChord.h"
 #include "CogCommonConfig.h"
 #include "CogWindow.h"
 #include "CogWindow_Settings.generated.h"
