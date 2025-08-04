@@ -1,4 +1,4 @@
-#pragma  once
+﻿#pragma  once
 
 #include "CoreMinimal.h"
 #include "CogCommonLog.h"
@@ -14,10 +14,10 @@ class COGDEBUG_API UCogDebugLogBlueprint : public UBlueprintFunctionLibrary
 
 public:
 
-    UFUNCTION(BlueprintCallable, meta = (DevelopmentOnly, WorldContext = "WorldContextObject"))
+    UFUNCTION(Category = "CogDebug", BlueprintCallable, meta = (DevelopmentOnly, WorldContext = "WorldContextObject"))
     static void Log(const UObject* WorldContextObject, FCogLogCategory LogCategory, ECogLogVerbosity Verbosity = ECogLogVerbosity::Verbose, const FString& Text = FString(""));
 
-    UFUNCTION(BlueprintPure, meta = (DevelopmentOnly, WorldContext = "WorldContextObject"))
+    UFUNCTION(Category = "CogDebug", BlueprintPure, meta = (DevelopmentOnly, WorldContext = "WorldContextObject"))
     static bool IsLogActive(const UObject* WorldContextObject, const FCogLogCategory LogCategory);
 
 };

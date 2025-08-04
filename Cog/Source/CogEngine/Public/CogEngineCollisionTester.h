@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "CoreMinimal.h"
 #include "Engine/EngineTypes.h"
@@ -66,78 +66,78 @@ public:
 
     void Query() const;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     bool TickInEditor = false;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     ECogEngine_CollisionQueryType Type = ECogEngine_CollisionQueryType::LineTrace;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     ECogEngine_CollisionQueryTraceMode TraceMode = ECogEngine_CollisionQueryTraceMode::Multi;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     ECogEngine_CollisionQueryOverlapMode OverlapMode = ECogEngine_CollisionQueryOverlapMode::Multi;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     ECogEngine_CollisionQueryBy By = ECogEngine_CollisionQueryBy::Channel;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     ECogEngine_CollisionQueryShape Shape = ECogEngine_CollisionQueryShape::Sphere;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     bool TraceComplex = false;
 
     UPROPERTY()
     int32 ObjectTypesToQuery = 0;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     TEnumAsByte<ECollisionChannel> TraceChannel = ECC_Visibility;
 
     UPROPERTY()
     int32 ProfileIndex = 0;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     FVector ShapeExtent = FVector(100, 100, 100);
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     bool DrawHitLocations = true;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     bool DrawHitImpactPoints = true;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     bool DrawHitShapes = true;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     bool DrawHitNormals = true;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     bool DrawHitImpactNormals = true;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     bool DrawHitPrimitives = true;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     bool DrawHitActorsNames = false;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     float HitPointSize = 5.0f;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     FColor NoHitColor = FColor::Red;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     FColor HitColor = FColor::Green;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     FColor NormalColor = FColor::Yellow;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     FColor ImpactNormalColor = FColor::Cyan;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     TObjectPtr<USceneComponent> StartComponent;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(Category = "CogEngine", EditAnywhere)
     TObjectPtr<USceneComponent> EndComponent;
 };

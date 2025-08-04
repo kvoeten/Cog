@@ -12,6 +12,7 @@ class AActor;
 class APawn;
 class APlayerController;
 class UCogSubsystem;
+class UInputComponent;
 class ULocalPlayer;
 class UWorld;
 

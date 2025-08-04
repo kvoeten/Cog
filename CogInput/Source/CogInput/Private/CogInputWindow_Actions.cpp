@@ -4,6 +4,7 @@
 #include "Engine/LocalPlayer.h"
 #include "Engine/World.h"
 #include "EnhancedInputSubsystems.h"
+#include "Styling/SlateTypes.h"
 #include "GameFramework/Pawn.h"
 #include "imgui_internal.h"
 #include "InputAction.h"
